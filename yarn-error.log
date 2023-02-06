@@ -1,0 +1,36 @@
+Arguments: 
+  /home/luisdesigns/.nvm/versions/node/v16.17.0/bin/node /home/luisdesigns/.nvm/versions/node/v16.17.0/bin/yarn init -a
+
+PATH: 
+  /home/luisdesigns/Programs/flutter/bin:/home/luisdesigns/.bun/bin:/home/luisdesigns/.deno/bin:/home/luisdesigns/.nvm/versions/node/v16.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/xampp/php:/mnt/c/composer:/mnt/c/xampp/mysql/bin:/mnt/c/Users/Luis/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Java/jdk-19/bin:/mnt/c/Users/Luis/AppData/Local/Android/Sdk/platform-tools:/mnt/c/Users/Luis/AppData/Local/Android/Sdk/cmdline-tools/latest/bin:/mnt/c/Users/Luis/AppData/Local/Android/Sdk/tools/emulator:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/110/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/130/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/140/DTS/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Users/Luis/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Luis/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Gradle/bin:/mnt/c/Users/Luis/AppData/Local/Android/Sdk/build-tools/30.0.3:/mnt/c/Users/Luis/.dotnet/tools:/mnt/c/Users/Luis/Desktop/flutter/bin:/mnt/c/Users/Luis/AppData/Roaming/npm:/mnt/c/Users/Luis/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin:/home/luisdesigns/.config/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/home/luisdesigns/.nvm/versions/node/v16.17.0/lib/node_modules/yarn/lib/cli.js:137150:13)
+      at Interface.emit (node:events:513:28)
+      at Interface._ttyWrite (node:readline:1085:16)
+      at ReadStream.onkeypress (node:readline:291:10)
+      at ReadStream.emit (node:events:513:28)
+      at emitKeys (node:internal/readline/utils:357:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:315:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
