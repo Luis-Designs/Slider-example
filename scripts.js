@@ -88,18 +88,14 @@ console.log('🚀 ~ file: scripts.js:36 ~ Slider', Slider);
   let value;
 
   arrowNext.addEventListener('click', () => changePosition(1));
-  arrowBefore.addEventListener('click', () => changePosition(-3));
+  arrowBefore.addEventListener('click', () => changePosition(-1));
 
   function changePosition(change) {
-    const currentElement = [
-      ...document.querySelectorAll('.slider__body--show'),
-    ][2].getAttribute('data-id');
-    console.log(
-      '🚀 ~ file: scripts.js:96 ~ changePosition ~ currentElement',
-      currentElement
-    );
+    const elements = [...document.querySelectorAll('.slider__body--show')];
+    const beforeElement = Number(elements[0].getAttribute('data-id'));
+    const afterElement = Number(elements[2].getAttribute('data-id'));
 
-    value = currentElement;
+    value = change > 0 ? afterElement : beforeElement;
 
     value += change;
 
@@ -107,29 +103,18 @@ console.log('🚀 ~ file: scripts.js:36 ~ Slider', Slider);
       value = value === 0 ? sliders.length : 1;
     }
 
-    sliders[currentElement - 3].classList.toggle('slider__body--show');
-    console.log(
-      '🚀 ~ file: scripts.js:112 ~ changePosition ~ currentElement',
-      currentElement - 2
-    );
-    console.log(
-      '🚀 ~ file: scripts.js:112 ~ changePosition ~ currentElement',
-      currentElement - 1
-    );
-
-    sliders[value - 3].classList.remove('slider__body--show');
-    sliders[value - 3].classList.add('slider__body--show');
-    // sliders[value - 2].classList.toggle('slider__body--show');
-    // sliders[value - 1].classList.toggle('slider__body--show');
-    console.log(
-      '🚀 ~ file: scripts.js:117 ~ changePosition ~ value',
-      value - 2
-    );
-    console.log(
-      '🚀 ~ file: scripts.js:117 ~ changePosition ~ value',
-      value - 1
-    );
-
     console.log('🚀 ~ file: scripts.js:106 ~ changePosition ~ value', value);
+
+    sliders[0].classList.remove('slider__body--show');
+    sliders[1].classList.remove('slider__body--show');
+    sliders[2].classList.remove('slider__body--show');
+
+    sliders[1].classList.add('slider__body--show');
+    sliders[1].nextSibling
+    sliders[2].classList.add('slider__body--show');
+    sliders[1].classList.add('slider__body--show');
+    sliders[3].classList.add('slider__body--show');
+
+    // sliders[currentElement - 3].classList.toggle('slider__body--show');
   }
 })();
